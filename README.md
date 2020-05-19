@@ -1,7 +1,7 @@
 
 
 Kompilera efter ändring i java-kod:
-  > javac Measure.java IO.java
+ `javac Measure.java IO.java
 
 
 small.R kör bara java-programmet en gång och plottar resultat i pdf i output, samt ger res i textfil i output
