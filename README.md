@@ -1,6 +1,6 @@
 
 
-**Kompilera efter ändring i java-kod:**
+**Kompilera efter ändring i java-kod eller nedladdning:**
 
     > javac Measure.java IO.java  
 
