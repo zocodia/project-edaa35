@@ -1,13 +1,15 @@
 
 
 Kompilera efter ändring i java-kod:
-    javac Measure.java IO.java
+
+    > javac Measure.java IO.java
 
 
 small.R kör bara java-programmet en gång och plottar resultat i pdf i output, samt ger res i textfil i output
 
   Starta:
-    Rscript small.R [fileNameKeys] [fileNameValues] [fileNameOutput] [nbrIterations] [structure] [measureType]
+    
+    > Rscript small.R [fileNameKeys] [fileNameValues] [fileNameOutput] [nbrIterations] [structure] [measureType]
 
     [fileNameKeys]    - inkludera path till input dir för enkelhet
     [fileNameValues]  - samma som ovan
@@ -21,6 +23,7 @@ small.R kör bara java-programmet en gång och plottar resultat i pdf i output, 
 large.R kör java-programmet ett visst antal gånger och räknar ut konfidensintervall och medelvärde
 
   Starta:
+  
     > Rscript large.R [fileNameKeys] [fileNameValues] [fileNameOutput] [nbrIterations] [structure] [measureType] [nbrOfRuns]
 
     [nbrOfRuns]       - hur många gånger R-scriptet ska köra java-programmet  
@@ -29,6 +32,6 @@ large.R kör java-programmet ett visst antal gånger och räknar ut konfidensint
 
 Exempel:
 
-  > Rscript small.R input/keys.txt input/values.txt output/ut.txt 10 tree find
+    > Rscript small.R input/keys.txt input/values.txt output/ut.txt 10 tree find
 
-  > Rscript large.R input/keys.txt input/values.txt output/ut.txt 100 tree find 10
+    > Rscript large.R input/keys.txt input/values.txt output/ut.txt 100 tree find 10
